@@ -4,8 +4,8 @@ spring:
     datasource:
             driver-class-name: com.mysql.jdbc.Driver
             url: jdbc:mysql://localhost:3306/drools?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&noAccessToProcedureBodies=true
-            username: root
-            password: root
+            username: db_name
+            password: db_password
             type: com.alibaba.druid.pool.DruidDataSource
             initialSize: 5
             minIdle: 5
