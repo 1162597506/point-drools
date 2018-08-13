@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @ComponentScan(basePackages ="com.liuzhe.drools")
-@EnableCaching
+//@EnableCaching
 public class DroolsSpringbootApplication {
 
     public static void main(String[] args) {

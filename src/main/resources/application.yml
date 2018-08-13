@@ -33,7 +33,8 @@ spring:
             # 连接超时时间（毫秒）
             timeout: 0
 
-logging:
-    level:
-            com.liuzhe.drools.dao: DEBUG
+#控制台打印 sql 语句
+#logging:
+#    level:
+#            com.liuzhe.drools.dao: DEBUG
 

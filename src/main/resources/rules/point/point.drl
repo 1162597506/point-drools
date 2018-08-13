@@ -40,16 +40,15 @@ rule buyMoneyPoint
 //        $point.recordPointLog($point.getUserName(),"buyMoneyPoint");
 end
 
-rule buyNumsPoint
-    // 当月购物次数5次以上，每五次赠送50分
-    salience 97
-    lock-on-active true
-    when
-        $point : Point(buyNums >= 5)
-    then
-        $point.setPoint($point.getPoint()+$point.getBuyNums()/5 * 50);
-//        $point.recordPointLog($point.getUserName(),"buyNumsPoint");
-end
+//rule buyNumsPoint
+//    // 当月购物次数5次以上，每五次赠送50分
+//    salience 97
+//    lock-on-active true
+//    when
+//        $point : Point(buyNums >= 5)
+//    then
+//        $point.setPoint($point.getPoint()+$point.getBuyNums()/5 * 50);
+//end
 
 rule allFitPoint
     // 特别的，如果全部满足了要求，则额外奖励100分
@@ -82,4 +81,807 @@ rule subBackMondyPoint
     then
         $point.setPoint($point.getPoint()-10);
 //        $point.recordPointLog($point.getUserName(),"subBackMondyPoint");
+end
+
+
+// 当月购物每次赠送10分
+rule buyNumsPoint0
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 0)
+    then
+        $point.setPoint($point.getPoint()+0);
+end
+rule buyNumsPoint1
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 1)
+    then
+        $point.setPoint($point.getPoint()+10);
+end
+rule buyNumsPoint2
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 2)
+    then
+        $point.setPoint($point.getPoint()+20);
+end
+rule buyNumsPoint3
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 3)
+    then
+        $point.setPoint($point.getPoint()+30);
+end
+rule buyNumsPoint4
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 4)
+    then
+        $point.setPoint($point.getPoint()+40);
+end
+rule buyNumsPoint5
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 5)
+    then
+        $point.setPoint($point.getPoint()+50);
+end
+rule buyNumsPoint6
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 6)
+    then
+        $point.setPoint($point.getPoint()+60);
+end
+rule buyNumsPoint7
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 7)
+    then
+        $point.setPoint($point.getPoint()+70);
+end
+rule buyNumsPoint8
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 8)
+    then
+        $point.setPoint($point.getPoint()+80);
+end
+rule buyNumsPoint9
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 9)
+    then
+        $point.setPoint($point.getPoint()+90);
+end
+rule buyNumsPoint10
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 10)
+    then
+        $point.setPoint($point.getPoint()+100);
+end
+rule buyNumsPoint11
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 11)
+    then
+        $point.setPoint($point.getPoint()+110);
+end
+rule buyNumsPoint12
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 12)
+    then
+        $point.setPoint($point.getPoint()+120);
+end
+rule buyNumsPoint13
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 13)
+    then
+        $point.setPoint($point.getPoint()+130);
+end
+rule buyNumsPoint14
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 14)
+    then
+        $point.setPoint($point.getPoint()+140);
+end
+rule buyNumsPoint15
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 15)
+    then
+        $point.setPoint($point.getPoint()+150);
+end
+rule buyNumsPoint16
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 16)
+    then
+        $point.setPoint($point.getPoint()+160);
+end
+rule buyNumsPoint17
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 17)
+    then
+        $point.setPoint($point.getPoint()+170);
+end
+rule buyNumsPoint18
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 18)
+    then
+        $point.setPoint($point.getPoint()+180);
+end
+rule buyNumsPoint19
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 19)
+    then
+        $point.setPoint($point.getPoint()+190);
+end
+rule buyNumsPoint20
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 20)
+    then
+        $point.setPoint($point.getPoint()+200);
+end
+rule buyNumsPoint21
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 21)
+    then
+        $point.setPoint($point.getPoint()+210);
+end
+rule buyNumsPoint22
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 22)
+    then
+        $point.setPoint($point.getPoint()+220);
+end
+rule buyNumsPoint23
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 23)
+    then
+        $point.setPoint($point.getPoint()+230);
+end
+rule buyNumsPoint24
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 24)
+    then
+        $point.setPoint($point.getPoint()+240);
+end
+rule buyNumsPoint25
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 25)
+    then
+        $point.setPoint($point.getPoint()+250);
+end
+rule buyNumsPoint26
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 26)
+    then
+        $point.setPoint($point.getPoint()+260);
+end
+rule buyNumsPoint27
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 27)
+    then
+        $point.setPoint($point.getPoint()+270);
+end
+rule buyNumsPoint28
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 28)
+    then
+        $point.setPoint($point.getPoint()+280);
+end
+rule buyNumsPoint29
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 29)
+    then
+        $point.setPoint($point.getPoint()+290);
+end
+rule buyNumsPoint30
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 30)
+    then
+        $point.setPoint($point.getPoint()+300);
+end
+rule buyNumsPoint31
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 31)
+    then
+        $point.setPoint($point.getPoint()+310);
+end
+rule buyNumsPoint32
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 32)
+    then
+        $point.setPoint($point.getPoint()+320);
+end
+rule buyNumsPoint33
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 33)
+    then
+        $point.setPoint($point.getPoint()+330);
+end
+rule buyNumsPoint34
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 34)
+    then
+        $point.setPoint($point.getPoint()+340);
+end
+rule buyNumsPoint35
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 35)
+    then
+        $point.setPoint($point.getPoint()+350);
+end
+rule buyNumsPoint36
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 36)
+    then
+        $point.setPoint($point.getPoint()+360);
+end
+rule buyNumsPoint37
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 37)
+    then
+        $point.setPoint($point.getPoint()+370);
+end
+rule buyNumsPoint38
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 38)
+    then
+        $point.setPoint($point.getPoint()+380);
+end
+rule buyNumsPoint39
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 39)
+    then
+        $point.setPoint($point.getPoint()+390);
+end
+rule buyNumsPoint40
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 40)
+    then
+        $point.setPoint($point.getPoint()+400);
+end
+rule buyNumsPoint41
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 41)
+    then
+        $point.setPoint($point.getPoint()+410);
+end
+rule buyNumsPoint42
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 42)
+    then
+        $point.setPoint($point.getPoint()+420);
+end
+rule buyNumsPoint43
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 43)
+    then
+        $point.setPoint($point.getPoint()+430);
+end
+rule buyNumsPoint44
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 44)
+    then
+        $point.setPoint($point.getPoint()+440);
+end
+rule buyNumsPoint45
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 45)
+    then
+        $point.setPoint($point.getPoint()+450);
+end
+rule buyNumsPoint46
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 46)
+    then
+        $point.setPoint($point.getPoint()+460);
+end
+rule buyNumsPoint47
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 47)
+    then
+        $point.setPoint($point.getPoint()+470);
+end
+rule buyNumsPoint48
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 48)
+    then
+        $point.setPoint($point.getPoint()+480);
+end
+rule buyNumsPoint49
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 49)
+    then
+        $point.setPoint($point.getPoint()+490);
+end
+rule buyNumsPoint50
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 50)
+    then
+        $point.setPoint($point.getPoint()+500);
+end
+rule buyNumsPoint51
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 51)
+    then
+        $point.setPoint($point.getPoint()+510);
+end
+rule buyNumsPoint52
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 52)
+    then
+        $point.setPoint($point.getPoint()+520);
+end
+rule buyNumsPoint53
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 53)
+    then
+        $point.setPoint($point.getPoint()+530);
+end
+rule buyNumsPoint54
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 54)
+    then
+        $point.setPoint($point.getPoint()+540);
+end
+rule buyNumsPoint55
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 55)
+    then
+        $point.setPoint($point.getPoint()+550);
+end
+rule buyNumsPoint56
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 56)
+    then
+        $point.setPoint($point.getPoint()+560);
+end
+rule buyNumsPoint57
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 57)
+    then
+        $point.setPoint($point.getPoint()+570);
+end
+rule buyNumsPoint58
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 58)
+    then
+        $point.setPoint($point.getPoint()+580);
+end
+rule buyNumsPoint59
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 59)
+    then
+        $point.setPoint($point.getPoint()+590);
+end
+rule buyNumsPoint60
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 60)
+    then
+        $point.setPoint($point.getPoint()+600);
+end
+rule buyNumsPoint61
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 61)
+    then
+        $point.setPoint($point.getPoint()+610);
+end
+rule buyNumsPoint62
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 62)
+    then
+        $point.setPoint($point.getPoint()+620);
+end
+rule buyNumsPoint63
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 63)
+    then
+        $point.setPoint($point.getPoint()+630);
+end
+rule buyNumsPoint64
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 64)
+    then
+        $point.setPoint($point.getPoint()+640);
+end
+rule buyNumsPoint65
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 65)
+    then
+        $point.setPoint($point.getPoint()+650);
+end
+rule buyNumsPoint66
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 66)
+    then
+        $point.setPoint($point.getPoint()+660);
+end
+rule buyNumsPoint67
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 67)
+    then
+        $point.setPoint($point.getPoint()+670);
+end
+rule buyNumsPoint68
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 68)
+    then
+        $point.setPoint($point.getPoint()+680);
+end
+rule buyNumsPoint69
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 69)
+    then
+        $point.setPoint($point.getPoint()+690);
+end
+rule buyNumsPoint70
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 70)
+    then
+        $point.setPoint($point.getPoint()+700);
+end
+rule buyNumsPoint71
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 71)
+    then
+        $point.setPoint($point.getPoint()+710);
+end
+rule buyNumsPoint72
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 72)
+    then
+        $point.setPoint($point.getPoint()+720);
+end
+rule buyNumsPoint73
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 73)
+    then
+        $point.setPoint($point.getPoint()+730);
+end
+rule buyNumsPoint74
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 74)
+    then
+        $point.setPoint($point.getPoint()+740);
+end
+rule buyNumsPoint75
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 75)
+    then
+        $point.setPoint($point.getPoint()+750);
+end
+rule buyNumsPoint76
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 76)
+    then
+        $point.setPoint($point.getPoint()+760);
+end
+rule buyNumsPoint77
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 77)
+    then
+        $point.setPoint($point.getPoint()+770);
+end
+rule buyNumsPoint78
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 78)
+    then
+        $point.setPoint($point.getPoint()+780);
+end
+rule buyNumsPoint79
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 79)
+    then
+        $point.setPoint($point.getPoint()+790);
+end
+rule buyNumsPoint80
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 80)
+    then
+        $point.setPoint($point.getPoint()+800);
+end
+rule buyNumsPoint81
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 81)
+    then
+        $point.setPoint($point.getPoint()+810);
+end
+rule buyNumsPoint82
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 82)
+    then
+        $point.setPoint($point.getPoint()+820);
+end
+rule buyNumsPoint83
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 83)
+    then
+        $point.setPoint($point.getPoint()+830);
+end
+rule buyNumsPoint84
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 84)
+    then
+        $point.setPoint($point.getPoint()+840);
+end
+rule buyNumsPoint85
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 85)
+    then
+        $point.setPoint($point.getPoint()+850);
+end
+rule buyNumsPoint86
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 86)
+    then
+        $point.setPoint($point.getPoint()+860);
+end
+rule buyNumsPoint87
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 87)
+    then
+        $point.setPoint($point.getPoint()+870);
+end
+rule buyNumsPoint88
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 88)
+    then
+        $point.setPoint($point.getPoint()+880);
+end
+rule buyNumsPoint89
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 89)
+    then
+        $point.setPoint($point.getPoint()+890);
+end
+rule buyNumsPoint90
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 90)
+    then
+        $point.setPoint($point.getPoint()+900);
+end
+rule buyNumsPoint91
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 91)
+    then
+        $point.setPoint($point.getPoint()+910);
+end
+rule buyNumsPoint92
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 92)
+    then
+        $point.setPoint($point.getPoint()+920);
+end
+rule buyNumsPoint93
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 93)
+    then
+        $point.setPoint($point.getPoint()+930);
+end
+rule buyNumsPoint94
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 94)
+    then
+        $point.setPoint($point.getPoint()+940);
+end
+rule buyNumsPoint95
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 95)
+    then
+        $point.setPoint($point.getPoint()+950);
+end
+rule buyNumsPoint96
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 96)
+    then
+        $point.setPoint($point.getPoint()+960);
+end
+rule buyNumsPoint97
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 97)
+    then
+        $point.setPoint($point.getPoint()+970);
+end
+rule buyNumsPoint98
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 98)
+    then
+        $point.setPoint($point.getPoint()+980);
+end
+rule buyNumsPoint99
+    salience 97
+    lock-on-active true
+    when
+        $point : Point(buyNums == 99)
+    then
+        $point.setPoint($point.getPoint()+990);
 end
