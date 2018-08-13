@@ -31,19 +31,3 @@ public class PointController {
         System.out.println("hello  word");
     }
 }
-
-// class test {
-//
-//     public static void main(String[] args) {
-//         for (int i = 0; i < 100; i++) {
-//             System.out.println("rule buyNumsPoint"+i+"\n" +
-//                     "    salience 97\n" +
-//                     "    lock-on-active true\n" +
-//                     "    when\n" +
-//                     "        $point : Point(buyNums == "+i+")\n" +
-//                     "    then\n" +
-//                     "        $point.setPoint($point.getPoint()+"+10*i+");\n" +
-//                     "end");
-//         }
-//     }
-// }
